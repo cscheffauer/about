@@ -18,9 +18,11 @@ class MainPage extends Component {
         return (
             <div className="MainPage" >
                 <header className="header">
-                    <TextCrawl />
-                    <SocialMediaIcon />
+                    <SocialMediaIcon type={'github'} url={'https://github.com/cscheffauer'} />
+                    <SocialMediaIcon type={'linkedin'} url={'https://linkedin.com'} />
+                    <SocialMediaIcon type={'instagram'} url={'https://instagr.am/christoph.codes'} />
                 </header>
+                <TextCrawl />
             </div>
         );
     }
