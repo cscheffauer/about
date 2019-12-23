@@ -1,10 +1,10 @@
-const socialmedia = [{
-    "type": "github",
-    "url": "https://github.com/cscheffauer"
+export const socialmedia = [{
+    platform: 'github',
+    url: 'https://github.com/cscheffauer'
 }, {
-    "type": "linkedin",
-    "url": "https://linkedin.com"
+    platform: 'linkedin',
+    url: 'https://linkedin.com'
 }, {
-    "type": "instagram",
-    "url": "https://instagr.am/christoph.codes"
-}]
+    platform: 'instagram',
+    url: 'https://instagr.am/christoph.codes'
+}];
