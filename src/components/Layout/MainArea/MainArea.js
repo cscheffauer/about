@@ -1,9 +1,8 @@
 import React from 'react'
-import tachyons from 'tachyons'
 
-import './Box.scss';
+import './MainArea.scss';
 
-const Box = (props) => {
+const MainArea = (props) => {
     return (
         <div className="fl w-100">
             {props.children}        {/* scroll will use it's children to render here*/}
@@ -11,4 +10,4 @@ const Box = (props) => {
     );
 }
 
-export default Box;
+export default MainArea;

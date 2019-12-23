@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import TextCrawl from '../components/TextCrawl/TextCrawl'
-import Box from '../components/Layout/Box'
+import MainArea from '../components/Layout/MainArea/MainArea'
 import { socialmedia } from '../data/socialmedia'
 
 import './MainPage.scss';
 import SocialMediaIcon from '../components/SocialMediaIcons/SocialMediaIcon';
-
+import HomeNavIcon from '../components/NavIcons/HomeNavIcon';
+import Footer from '../components/Layout/Footer/Footer';
 
 class MainPage extends Component {
     constructor() {
@@ -25,6 +26,13 @@ class MainPage extends Component {
         return (
             <div className="MainPage" >
                 <header className="header">
+                    <HomeNavIcon />
+                    HEADER
+                </header>
+                <MainArea>
+                    <TextCrawl />
+                </MainArea>
+                <div className="aside"> {/*SOCIAL MEDIA*/}
                     {
                         this.state.socialmedia.map((link, i) => {
                             return (
@@ -32,10 +40,8 @@ class MainPage extends Component {
                             );
                         })
                     }
-                </header>
-                <Box>
-                    <TextCrawl />
-                </Box>
+                </div>
+                <Footer />
 
 
             </div>
