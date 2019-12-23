@@ -27,7 +27,6 @@ class MainPage extends Component {
             <div className="MainPage" >
                 <header className="header">
                     <HomeNavIcon />
-                    HEADER
                 </header>
                 <MainArea>
                     <TextCrawl />

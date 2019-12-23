@@ -25,13 +25,11 @@ class TextCrawl extends Component {
     }
     render() {
         return (
-            <div>
-                <main className="scene">
-                    <div className="actor">
-                        <div id="Christoph" className="actor__content"></div>
-                    </div>
-                </main>
-            </div>
+            <main className="scene">
+                <div className="actor">
+                    <div id="Christoph" className="actor__content"></div>
+                </div>
+            </main>
         );
     }
 

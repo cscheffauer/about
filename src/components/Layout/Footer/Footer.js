@@ -4,7 +4,7 @@ import './Footer.scss';
 
 
 const Footer = () => {
-    return <div>Footer to be built</div>
+    return <div className="footer">Footer to be built</div>
 }
 
 export default Footer;

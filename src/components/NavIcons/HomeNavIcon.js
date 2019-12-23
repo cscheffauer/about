@@ -8,7 +8,7 @@ const expandNavMenu = () => {
 
 
 const HomeNavIcon = () => {
-    return <img className="icon" alt="HomeNav Icon" src={`./icons/home.png`} onClick={expandNavMenu} />
+    return <img className="homeIcon" alt="HomeNav Icon" src={`./icons/home.png`} onClick={expandNavMenu} />
 }
 
 export default HomeNavIcon;

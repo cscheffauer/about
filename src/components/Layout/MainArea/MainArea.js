@@ -4,7 +4,7 @@ import './MainArea.scss';
 
 const MainArea = (props) => {
     return (
-        <div className="fl w-100">
+        <div className="mainArea">
             {props.children}        {/* scroll will use it's children to render here*/}
         </div>
     );

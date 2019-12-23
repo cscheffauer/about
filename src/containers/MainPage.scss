@@ -12,3 +12,19 @@ html {
 body {
   background-color: #222;
 }
+.header {
+  background-color: green;
+  flex: 100%;
+  order: 1;
+}
+
+.MainPage {
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.aside {
+  background: gold;
+  order: 2;
+}
