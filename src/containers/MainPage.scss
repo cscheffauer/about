@@ -10,12 +10,7 @@ html {
 }
 
 body {
-  background-color: #222;
-}
-.header {
-  background-color: green;
-  flex: 100%;
-  order: 1;
+  background-color: #DBDBDB;
 }
 
 .MainPage {
@@ -24,7 +19,24 @@ body {
   text-align: center;
 }
 
+.header {
+  border: 1px solid green;
+  flex: 100%;
+  order: 1;
+}
+
 .aside {
-  background: gold;
+  border: 1px solid gold;
   order: 2;
+}
+
+.mainArea {
+  border: 1px solid red;
+  order: 3;
+}
+
+.footer {
+  border: 1px solid blue;
+  flex: 100%;
+  order: 4;
 }
