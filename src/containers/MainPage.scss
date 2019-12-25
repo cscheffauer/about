@@ -19,6 +19,7 @@ body {
   text-align: center;
 }
 
+
 .header {
   border: 1px solid green;
   flex: 100%;
@@ -33,6 +34,7 @@ body {
 .mainArea {
   border: 1px solid red;
   order: 3;
+  flex: auto;
 }
 
 .footer {

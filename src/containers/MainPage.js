@@ -29,6 +29,7 @@ class MainPage extends Component {
                     <HomeNavIcon />
                 </header>
                 <MainArea>
+                
                     <TextCrawl />
                 </MainArea>
                 <div className="aside"> {/*SOCIAL MEDIA*/}
