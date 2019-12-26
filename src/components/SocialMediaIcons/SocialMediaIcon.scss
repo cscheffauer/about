@@ -1,5 +1,35 @@
-.icon {
+@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
+
+$font-family-base: 'Chivo', serif;
+
+.iconSocial {
     float: left;
     height: 75px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+.tooltipSocial {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipSocial .tooltiptextSocial {
+    font-family: $font-family-base;
+    visibility: hidden;
+    width: 130%;
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 46%;
+    left: 120%;
+  }
+  
+  .tooltipSocial:hover .tooltiptextSocial {
+    visibility: visible;
+  }

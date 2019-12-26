@@ -1,4 +1,45 @@
+@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
+
+$font-family-base: 'Chivo', serif;
+
+
 .homeIcon {
     float: left;
     height: 75px;
 }
+
+.navIcon {
+    float: left;
+    height: 75px;
+    margin-left: 25px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    font-family: "Chivo", serif;
+    visibility: hidden;
+    width: 90%;
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 18%;
+
+
+    
+    
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

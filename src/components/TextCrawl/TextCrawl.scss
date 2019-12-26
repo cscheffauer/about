@@ -12,7 +12,13 @@ $spacing: 2rem;
 $spacing-large: $spacing * 3;
 
 .textCrawlBox {
-
+  margin: 100px auto ;
+  max-width: 1000px;
+  height: 400px;
+  background-color: #222;
+  -webkit-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
+-moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
+box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
 }
 
   

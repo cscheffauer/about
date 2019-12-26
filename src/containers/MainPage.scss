@@ -16,29 +16,29 @@ body {
 .MainPage {
   display: flex;  
   flex-flow: row wrap;
-  text-align: center;
 }
 
 
 .header {
-  border: 1px solid green;
+  //border: 1px solid green;
   flex: 100%;
   order: 1;
 }
 
 .aside {
-  border: 1px solid gold;
+  //border: 1px solid gold;
+  flex: 0;
   order: 2;
 }
 
 .mainArea {
-  border: 1px solid red;
+  //border: 1px solid red;
   order: 3;
   flex: auto;
 }
 
 .footer {
-  border: 1px solid blue;
+  //border: 1px solid blue;
   flex: 100%;
   order: 4;
 }
