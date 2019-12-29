@@ -1,5 +1,12 @@
 .mainArea {
     justify-content: center;
+    margin: 100px auto ;
+    max-width: 1300px;
+    height: 640px;
+    background-color: #222;
+    -webkit-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
+    box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
 }
   /*
   @media all and (min-width: 800px) {

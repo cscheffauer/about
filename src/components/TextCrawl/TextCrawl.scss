@@ -11,48 +11,37 @@ $color-white: #fff;
 $spacing: 5rem;
 $spacing-large: $spacing * 3;
 
-.textCrawlBox {
-  margin: 100px auto ;
-  max-width: 1300px;
-  height: 640px;
-  background-color: #222;
-  -webkit-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
--moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
+.textCrawlScene {
+  padding: $spacing-large $spacing;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-  
-  .textCrawlScene {
-    padding: $spacing-large $spacing;
-    max-width: 1000px;
-    margin: 0 auto;
+.textCrawlActor {
+  color: $color-white;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-size: 2.8rem;
+  display: flex;
+  margin-bottom: $spacing;
+
+  &:last-of-type {
+    margin-bottom: $spacing-large;
   }
-  
-  .textCrawlActor {
-    color: $color-white;
-    font-family: $font-family-base;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
-    font-size: 2.8rem;
-    display: flex;
-    margin-bottom: $spacing;
-  
-    &:last-of-type {
-      margin-bottom: $spacing-large;
-    }
-  }
-  
-  .actor__content {
-    flex-grow: 1;
-  }
-  
-  @keyframes blink {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .actor__content--typing::after {
-    content: '|';
-    animation: blink 500ms infinite;
-  }
+}
+
+.actor__content {
+  flex-grow: 1;
+}
+
+@keyframes blink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.actor__content--typing::after {
+  content: '|';
+  animation: blink 500ms infinite;
+}
   
