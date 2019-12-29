@@ -3,7 +3,7 @@ import React from 'react'
 import './NavIcons.scss';
 
 const expandNavMenu = () => {
-    alert('test');
+    //alert('test');
 };
 
 

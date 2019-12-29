@@ -24,7 +24,7 @@ class Projects extends Component {
                                 {
                                         this.state.projects.map((project, i) => {
                                                 return (
-                                                        <Project key={i} name={project.name} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} />
+                                                        <Project key={i} name={project.name} status={project.status} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} />
                                                 );
                                         })
                                 }
