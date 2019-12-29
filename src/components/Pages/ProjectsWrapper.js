@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Slider from "react-slick";
+
+import Project from './Project'
+
+import { projects } from '../../data/projects'
 
 import './Projects.scss';
 
+class Projects extends Component {
+        constructor() {
+                super();
+                this.state = {
+                        projects: projects,
+                        settings: {
+                                dots: true
+                        }
+                };
+        }
 
-const Projects = () => {
-
-        var settings = {
-                dots: true
-        };
-        return (
-                <div className="outerBox">
-                        <Slider className="innerBox" {...settings}>
+        render() {
+                return (< div className="outerBox" >
+                        <Slider className="innerBox" {...this.state.settings}>
                                 {
                                         this.state.projects.map((project, i) => {
                                                 return (
@@ -19,9 +28,6 @@ const Projects = () => {
                                                 );
                                         })
                                 }
-
-
-
                                 <div>
                                         <img src="http://placekitten.com/g/400/200" />
                                 </div>
@@ -35,8 +41,8 @@ const Projects = () => {
                                         <img src="http://placekitten.com/g/400/200" />
                                 </div>
                         </Slider>
-                </div>
-        )
+                </div >)
+        }
 }
 
 export default Projects;
