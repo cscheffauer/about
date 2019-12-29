@@ -1,0 +1,41 @@
+@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
+
+$font-family-base: 'Chivo', serif;
+
+.outerBox {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #464646;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.aboutIconWrapper{
+    order: 1;
+    flex: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.aboutNameWrapper{
+    order: 2;
+    flex: 100%;
+    text-align: center;
+    font-family: $font-family-base;
+    color: #ffff;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.aboutTextCrawl{
+    order: 3;
+    flex: 100%;
+    text-align: center;
+    font-family: $font-family-base;
+    color: #ffff;
+    margin-top: 40px;
+    font-size: 20px;
+}

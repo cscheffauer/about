@@ -34,6 +34,9 @@ $font-family-base: 'Chivo', serif;
     right: 5px;
 }
 
+/**
+* Project Box & Wrapping
+**/
 
 .projectBoxWrapper {
     margin-top: 20px;
@@ -51,6 +54,11 @@ $font-family-base: 'Chivo', serif;
     display: flex;
     flex-flow: row wrap;
 }
+
+
+/**
+* Project Box Content
+**/
 
 .projectHeadline{
     order: 1;
