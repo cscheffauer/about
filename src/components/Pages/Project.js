@@ -4,7 +4,15 @@ import './Projects.scss';
 
 
 const Project = () => {
-    return <div className="project">Project will displayed be here</div>
+    return (
+        <div className="projectBoxWrapper">
+            <div className="innerProjectBox">
+                <div className="innerProjectWrapper">
+
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Project;

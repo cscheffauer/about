@@ -11,7 +11,7 @@ import NavIcon from '../components/NavIcons/NavIcon';
 import Footer from '../components/Layout/Footer/Footer';
 
 
-const AsyncPageProjects = lazy(() => import('../components/Pages/ProjectsWrapper'));
+const AsyncPageProjects = lazy(() => import('../components/Pages/ProjectsContainer'));
 const AsyncPageAbout = lazy(() => import('../components/Pages/About'));
 const AsyncPageImprint = lazy(() => import('../components/Pages/Imprint'));
 

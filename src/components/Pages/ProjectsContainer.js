@@ -28,18 +28,6 @@ class Projects extends Component {
                                                 );
                                         })
                                 }
-                                <div>
-                                        <img src="http://placekitten.com/g/400/200" />
-                                </div>
-                                <div>
-                                        <img src="http://placekitten.com/g/400/200" />
-                                </div>
-                                <div>
-                                        <img src="http://placekitten.com/g/400/200" />
-                                </div>
-                                <div>
-                                        <img src="http://placekitten.com/g/400/200" />
-                                </div>
                         </Slider>
                 </div >)
         }

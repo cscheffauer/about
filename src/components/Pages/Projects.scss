@@ -4,7 +4,7 @@
     height: 90%;
     left: 5%;
     top: 5%;
-    background-color: grey;
+    background-color: #464646;
 }
 
 /**
@@ -18,7 +18,11 @@
 .slick-dots li button:before {
     font-size: 12px;
     color: #222;
-  }
+}
+
+.slick-dots {
+      bottom: -40px;
+}
 
 .slick-prev {
     left: 5px;
@@ -27,4 +31,18 @@
 
 .slick-next {
     right: 5px;
+}
+
+
+.projectBoxWrapper {
+    margin-top: 20px;
+    display: flex;
+    height: 500px;
+}
+
+.innerProjectBox {
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+    background-color: #353535;
 }
