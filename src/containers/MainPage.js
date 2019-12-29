@@ -19,42 +19,41 @@ class MainPage extends Component {
     constructor() {
         super();
         this.state = {
-            socialmedia: [],
-            menuitems: [],
+            socialmedia: socialmedia,
+            menuitems: menuitems,
             route: 'home'
         };
-    }
-    componentDidMount() {
-        this.setState((state) => {
-            return { socialmedia: socialmedia, menuitems: menuitems };
-        });
     }
     onRouteChange = (route) => {
         this.setState({ route: route });
     }
-    render() {
-        let page;
-        if (this.state.route === 'home') {
-            page = <TextCrawl />
-        } else if (this.state.route === 'projects') {
-            page = (
+    getRouteComponent = (route) => {
+        if (route === 'home') {
+            return <TextCrawl />
+        } else if (route === 'projects') {
+            return (
                 <Suspense fallback={< div > Loading...</div >}>
                     <AsyncPageProjects />
                 </Suspense>
             )
-        } else if (this.state.route === 'about') {
-            page = (
+        } else if (route === 'about') {
+            return (
                 <Suspense fallback={< div > Loading...</div >}>
                     <AsyncPageAbout />
                 </Suspense>
             )
         } else {
-            page = (
+            return (
                 <Suspense fallback={< div > Loading...</div >}>
                     <AsyncPageImprint />
                 </Suspense>
             )
         }
+    }
+
+    render() {
+        let page;
+        page = this.getRouteComponent(this.state.route);
         return (
             <div className="MainPage" >
                 <header className="header">
