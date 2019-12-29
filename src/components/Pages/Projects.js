@@ -1,10 +1,14 @@
 import React from 'react'
 
-import './Pages.scss';
+import './Projects.scss';
 
 
 const Projects = () => {
-    return <div className="projects">Projects</div>
+    return (
+            <div className="outerBox">
+                    
+                </div>
+        )
 }
 
 export default Projects;
