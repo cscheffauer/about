@@ -1,13 +1,10 @@
 export const menuitems = [{
     type: 'projects',
-    url: '',
     tooltiptext: 'Projects'
 }, {
-    type: 'me',
-    url: '',
+    type: 'about',
     tooltiptext: 'About Me'
 }, {
     type: 'imprint',
-    url: '',
     tooltiptext: 'Imprint'
 }];

@@ -2,15 +2,11 @@ import React from 'react'
 
 import './NavIcons.scss';
 
-const openPage = () => {
-    alert('test');
-};
 
-
-const NavIcon = ({ type, url, tooltiptext }) => {
+const NavIcon = ({ onRouteChange, type, tooltiptext }) => {
     return (
         <div className="tooltip">
-            <img className="navIcon" alt="HomeNav Icon" src={`./icons/${type}.png`} onClick={openPage} />
+            <img className="navIcon" alt="HomeNav Icon" src={`./icons/${type}.png`} onClick={() => onRouteChange(type)} />
             <span className="tooltiptext">{tooltiptext}</span>
         </div>
     )
