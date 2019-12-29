@@ -1,5 +1,5 @@
 import React, { Component, Suspense, lazy } from 'react'
-import TextCrawl from '../components/TextCrawl/TextCrawl'
+import TextCrawl from '../components/TextCrawl/HomeTextCrawl'
 import MainArea from '../components/Layout/MainArea/MainArea'
 import { socialmedia } from '../data/socialmedia'
 import { menuitems } from '../data/menu'

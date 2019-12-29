@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import theaterJS from 'theaterjs';
 
-import './TextCrawl.scss';
+import './HomeTextCrawl.scss';
 
 
 class TextCrawl extends Component {
@@ -25,11 +25,11 @@ class TextCrawl extends Component {
     }
     render() {
         return (
-                <main className="textCrawlScene">
-                    <div className="textCrawlActor">
-                        <div id="Christoph" className="actor__content"></div>
-                    </div>
-                </main>
+            <main className="textCrawlScene">
+                <div className="textCrawlActor">
+                    <div id="Christoph" className="actor__content"></div>
+                </div>
+            </main>
         );
     }
 
