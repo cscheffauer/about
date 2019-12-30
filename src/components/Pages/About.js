@@ -23,13 +23,14 @@ class About extends Component {
                     <div className="aboutNameWrapper">
                         {about.name}
                     </div>
+                    <div className="aboutDivider"></div>
                     <div className="aboutTextCrawl">
                         {
                             this.state.about.questions.map((question, i) => {
                                 return (
                                     <div key={i}>
                                         <div className="aboutTextQuestion">{question.question}</div>
-                                        <div className="aboutTextAnswer">{question.answer}</div>
+                                        <div className="aboutTextAnswer"><p>{question.answer}</p></div>
                                     </div>
                                 );
                             })
