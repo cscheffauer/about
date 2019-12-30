@@ -25,7 +25,19 @@ class About extends Component {
                         {about.name}
                     </div>
                     <div className="aboutTextCrawl">
-                        <AboutTextCrawl />
+                        {/*<AboutTextCrawl />*/}
+                        {
+                            this.state.about.questions.map((question, i) => {
+                                return (
+                                    <div key={i}>
+                                        <div className="aboutTextQuestion">{question.question}</div>
+                                        <div className="aboutTextAnswer">{question.answer}</div>
+                                    </div>
+                                );
+                            })
+
+                        }
+
                     </div>
                 </Scroll>
             </div>

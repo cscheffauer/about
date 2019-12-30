@@ -38,4 +38,18 @@ $font-family-base: 'Chivo', serif;
     color: #ffff;
     margin-top: 40px;
     font-size: 20px;
+    display: block;
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+.aboutTextQuestion{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.aboutTextAnswer{
+    margin-bottom: 80px;
+    font-size: 18px;
 }
