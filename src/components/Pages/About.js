@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import { about } from '../../data/about'
 import Scroll from '../Layout/Tools/Scroll'
-import AboutTextCrawl from '../TextCrawl/AboutTextCrawl'
 
 import './About.scss';
 
@@ -25,7 +24,6 @@ class About extends Component {
                         {about.name}
                     </div>
                     <div className="aboutTextCrawl">
-                        {/*<AboutTextCrawl />*/}
                         {
                             this.state.about.questions.map((question, i) => {
                                 return (
