@@ -16,9 +16,14 @@ class Imprint extends Component {
     render() {
         return (
             <div className="imprintOuterBox" >
-                <Scroll>
-                    {imprint.text}
-                </Scroll>
+                <div className="imprintHeadline">
+                    {imprint.headline}
+                </div>
+                <div className="imprintTextbox">
+                    <Scroll >
+                        {imprint.text}
+                    </Scroll>
+                </div>
             </div>
         )
 

@@ -14,6 +14,10 @@ $font-family-base: 'Chivo', serif;
     margin-left: 25px;
 }
 
+.navIcon:hover {
+  cursor: pointer;
+}
+
 .tooltipNavIcons {
     position: relative;
     display: inline-block;

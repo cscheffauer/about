@@ -13,3 +13,26 @@ $font-family-base: 'Chivo', serif;
     display: flex;
     flex-flow: row wrap;
 }
+
+.imprintHeadline{
+    order: 1;
+    flex: 100%;
+    text-align: center;
+    font-family: $font-family-base;
+    color: #ffff;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.imprintTextbox{
+    order: 2;
+    flex: 100% 1;
+    font-family: "Chivo", serif;
+    color: #ffff;
+    font-size: 20px;
+    position: absolute;
+    top: 130px;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+}
