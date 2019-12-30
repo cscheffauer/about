@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import { about } from '../../data/about'
 import Scroll from '../Layout/Tools/Scroll'
+import Pin from '../Layout/Tools/Pin'
 
 import './About.scss';
 
@@ -23,6 +24,10 @@ class About extends Component {
                     <div className="aboutNameWrapper">
                         {about.name}
                     </div>
+                    <div className="aboutLocationWrapper">
+                        <Pin />
+                        <a className="aboutLocationLink" href={about.googleMapsUrl} target="_blank" rel="noopener noreferrer">{about.location}</a>
+                    </div>
                     <div className="aboutDivider"></div>
                     <div className="aboutTextCrawl">
                         {
@@ -36,7 +41,6 @@ class About extends Component {
                             })
 
                         }
-
                     </div>
                 </Scroll>
             </div>

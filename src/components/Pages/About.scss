@@ -30,9 +30,34 @@ $font-family-base: 'Chivo', serif;
     margin-top: 10px;
     font-size: 40px;
 }
+.aboutLocationWrapper{
+    order: 3;
+    flex: 100%;
+    font-family: $font-family-base;
+    color: #ffff;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    margin-top: 15px;
+}
+
+.aboutLocationLink {
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.aboutLocationLink:hover {
+    font-size: 27px;
+    color: #fff;
+    text-decoration: none;
+}
 
 .aboutTextCrawl{
-    order: 3;
+    order: 4;
     flex: 100%;
     text-align: center;
     font-family: $font-family-base;
