@@ -14,12 +14,12 @@ $font-family-base: 'Chivo', serif;
     margin-left: 25px;
 }
 
-.tooltip {
+.tooltipNavIcons {
     position: relative;
     display: inline-block;
   }
   
-  .tooltip .tooltiptext {
+  .tooltipNavIcons .tooltiptext {
     font-family: "Chivo", serif;
     visibility: hidden;
     width: 90%;
@@ -40,6 +40,6 @@ $font-family-base: 'Chivo', serif;
     
   }
   
-  .tooltip:hover .tooltiptext {
+  .tooltipNavIcons:hover .tooltiptext {
     visibility: visible;
   }

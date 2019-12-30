@@ -2,7 +2,7 @@
 
 $font-family-base: 'Chivo', serif;
 
-.outerBox {
+.projectOuterBox {
     position: absolute;
     width: 90%;
     height: 90%;
@@ -12,26 +12,12 @@ $font-family-base: 'Chivo', serif;
 }
 
 /**
-* Slick Slider
+* Carousel Styling
 **/
 
-
-.slick-dots li button:before {
-    font-size: 12px;
-    color: #222;
-}
-
-.slick-dots {
-      bottom: -40px;
-}
-
-.slick-prev {
-    left: 5px;
-    z-index: 100;
-}
-
-.slick-next {
-    right: 5px;
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
 }
 
 /**
