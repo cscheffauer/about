@@ -1,0 +1,15 @@
+@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chivo:700&display=swap');
+
+$font-family-base: 'Chivo', serif;
+
+.imprintOuterBox {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #464646;
+    display: flex;
+    flex-flow: row wrap;
+}
