@@ -4,7 +4,7 @@ export const socialmedia = [{
     tooltiptext: 'Github'
 }, {
     platform: 'linkedin',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/christoph-scheffauer/',
     tooltiptext: 'Linkedin'
 }, {
     platform: 'instagram',
