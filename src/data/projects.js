@@ -6,18 +6,24 @@ export const projects = [{
     },
     demourl: {
         label: 'Live Demo',
-        url: 'https://github.com'
+        url: 'https://cscheffauer.github.io/starwars/'
     },
     repourl: {
         label: 'Repository',
-        url: 'https://github.com'
+        url: 'https://github.com/cscheffauer/starwars'
     },
     technologies: [
         {
-            name: 'React.js'
+            name: 'React'
+        },
+        {
+            name: 'React.lazy'
         },
         {
             name: 'Redux'
+        },
+        {
+            name: 'Redux-Thunk'
         },
         {
             name: 'Tachyons'
