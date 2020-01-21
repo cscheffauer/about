@@ -6,5 +6,5 @@ export const menuitems = [{
     tooltiptext: 'About Me'
 }, {
     type: 'imprint',
-    tooltiptext: 'Imprint'
+    tooltiptext: 'Disclaimer'
 }];
