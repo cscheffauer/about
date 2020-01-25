@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './NavIcons.scss';
+import MenuSelectAnimation from '../Layout/Tools/MenuSelectAnimation';
 
-const expandNavMenu = () => {
-    //alert('test');
-};
+const HomeNavIcon = ({ onRouteChange, route }) => {
+    return (
+        <Fragment>
+            {
+                route === 'home' &&
+                <div className="positionAnimationHomeNav">
+                    <MenuSelectAnimation type="homeNavIcon" />
+                </div>
+            }
+            <img id="homeIcon" className="homeIcon" alt="HomeNav Icon" src={`./icons/home.png`} onClick={() => onRouteChange('home')} />
+        </Fragment>
+    );
 
-
-const HomeNavIcon = () => {
-    return <img className="homeIcon" alt="HomeNav Icon" src={`./icons/home.png`} onClick={expandNavMenu} />
 }
 
 export default HomeNavIcon;

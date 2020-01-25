@@ -9,7 +9,6 @@ import './MainPage.scss';
 import SocialMediaIcon from '../components/SocialMediaIcons/SocialMediaIcon';
 import HomeNavIcon from '../components/NavIcons/HomeNavIcon';
 import NavIcon from '../components/NavIcons/NavIcon';
-import Footer from '../components/Layout/Footer/Footer';
 
 
 const AsyncPageProjects = lazy(() => import('../components/Pages/ProjectsContainer'));
@@ -58,11 +57,11 @@ class MainPage extends Component {
         return (
             <div className="MainPage" >
                 <header className="header">
-                    <HomeNavIcon />
+                    <HomeNavIcon onRouteChange={this.onRouteChange} route={this.state.route} />
                     {
                         this.state.menuitems.map((menuitem, i) => {
                             return (
-                                <NavIcon onRouteChange={this.onRouteChange} key={i} type={menuitem.type} url={menuitem.url} tooltiptext={menuitem.tooltiptext} />
+                                <NavIcon onRouteChange={this.onRouteChange} key={i} type={menuitem.type} url={menuitem.url} tooltiptext={menuitem.tooltiptext} route={this.state.route} />
                             );
                         })
                     }
@@ -79,7 +78,6 @@ class MainPage extends Component {
                         })
                     }
                 </div>
-                <Footer />
 
 
             </div>

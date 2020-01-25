@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './NavIcons.scss';
+import MenuSelectAnimation from '../Layout/Tools/MenuSelectAnimation';
 
+const NavIcon = ({ onRouteChange, type, tooltiptext, route }) => {
 
-const NavIcon = ({ onRouteChange, type, tooltiptext }) => {
     return (
-        <div className="tooltipNavIcons">
-            <img className="navIcon" alt="HomeNav Icon" src={`./icons/${type}.png`} onClick={() => onRouteChange(type)} />
-            <span className="tooltiptext">{tooltiptext}</span>
-        </div>
+        <Fragment>
+            {
+                route === type &&
+                <div className={`positionAnimationNav-${type}`}>
+                    <MenuSelectAnimation type="NavIcon" />
+                </div>
+            }
+            <div className="tooltipNavIcons">
+                <img className="navIcon" alt="HomeNav Icon" src={`./icons/${type}.png`} onClick={() => onRouteChange(type)} />
+                <span className="tooltiptext">{tooltiptext}</span>
+            </div>
+        </Fragment>
+
     )
 }
 

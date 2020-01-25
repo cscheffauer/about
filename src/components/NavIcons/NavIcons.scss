@@ -6,6 +6,11 @@ $font-family-base: 'Chivo', serif;
 .homeIcon {
     float: left;
     height: 75px;
+    position: relative;
+}
+
+.homeIcon:hover {
+  cursor: pointer;
 }
 
 .navIcon {
@@ -38,12 +43,38 @@ $font-family-base: 'Chivo', serif;
     z-index: 1;
     top: 120%;
     left: 18%;
-
-
-    
-    
   }
   
   .tooltipNavIcons:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .positionAnimationHomeNav {
+    position: absolute;
+    transform: translate(-10px,-10px);
+    z-index: -10;
+  }
+
+  .positionAnimationNav {
+
+    &-projects {
+      position: absolute;
+      z-index: -10;
+    top: 0px;
+    left: 57px;
+    }
+
+    &-about {
+      position: absolute;
+      z-index: -10;
+      top: 0px;
+      left: 157px;
+    }
+
+    &-imprint {
+      position: absolute;
+      z-index: -10;
+      top: 0px;
+      left: 257px;
+    }
   }

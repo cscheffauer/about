@@ -40,6 +40,13 @@ const Project = ({ name, status, demourl, repourl, technologies }) => {
                         </div>
                     </div>
 
+                    {
+                        status.label === "coming soon" &&
+                        <div className="projectPictures">
+                            
+                        </div>
+                    }
+
                 </div>
             </div>
         </div >
