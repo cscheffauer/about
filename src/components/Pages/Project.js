@@ -44,9 +44,10 @@ const Project = ({ name, status, demourl, repourl, technologies, pictures, proje
                             {
                                 pictures.map((picture, i) => {
                                     return (
-                                        <Fragment key={i}>
+                                        <div style={{ display: "block", marginBottom: "20px", textAlign: "center" }} key={i} >
+                                            <p>{picture.name}</p>
                                             <img alt={picture.name} src={picture.src} className="projectPreviewPicture" onClick={() => projectPreviewClick(picture.src, picture.name)} />
-                                        </Fragment>
+                                        </div>
                                     );
 
                                 })
@@ -56,7 +57,7 @@ const Project = ({ name, status, demourl, repourl, technologies, pictures, proje
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
