@@ -1,12 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import './Projects.scss';
 
 
-
-
-const Project = ({ name, status, demourl, repourl, technologies }) => {
-
+const Project = ({ name, status, demourl, repourl, technologies, pictures, projectPreviewClick }) => {
     return (
         <div className="projectBoxWrapper">
             <div className="innerProjectBox">
@@ -41,9 +38,19 @@ const Project = ({ name, status, demourl, repourl, technologies }) => {
                     </div>
 
                     {
-                        status.label === "coming soon" &&
+                        status.label === "coming soon" && pictures.length > 0 &&
+
                         <div className="projectPictures">
-                            
+                            {
+                                pictures.map((picture, i) => {
+                                    return (
+                                        <Fragment key={i}>
+                                            <img alt={picture.name} src={picture.src} className="projectPreviewPicture" onClick={() => projectPreviewClick(picture.src, picture.name)} />
+                                        </Fragment>
+                                    );
+
+                                })
+                            }
                         </div>
                     }
 
@@ -52,5 +59,6 @@ const Project = ({ name, status, demourl, repourl, technologies }) => {
         </div>
     )
 }
+
 
 export default Project;

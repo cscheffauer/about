@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
 import Project from './Project'
@@ -20,8 +20,21 @@ class Projects extends Component {
                         interval: null,
                         touch: true,
                         projects: projects,
+                        displayPictureModal: false,
+                        displayPicturesSRC: '',
+                        displayPicturesCaption: ''
                 };
         }
+
+
+        projectPreviewClick = (src, caption) => {
+                this.setState({ displayPictureModal: true, displayPicturesSRC: src, displayPicturesCaption: caption });
+        }
+
+        projectPictureOnClose = () => {
+                this.setState({ displayPictureModal: false });
+        }
+
 
         handleSelect(selectedIndex, e) {
                 this.setState({
@@ -36,8 +49,15 @@ class Projects extends Component {
 
         render() {
                 const { index, direction, fade, interval, touch, projects } = this.state;
-                return (
-                        < div className="projectOuterBox" >
+                return (<Fragment>
+                        {this.state.displayPictureModal &&
+                                <div className="projectPictureModal">
+                                        <span className="projectPictureClose" onClick={() => this.projectPictureOnClose()}>&times;</span>
+                                        <img src={this.state.displayPicturesSRC} alt={this.state.displayPicturesCaption} className="projectPicture" />
+                                        <div className="projectPictureCaption">{this.state.displayPicturesCaption}</div>
+                                </div>
+                        }
+                        <div className="projectOuterBox" >
                                 <Carousel
                                         activeIndex={index}
                                         direction={direction}
@@ -48,14 +68,16 @@ class Projects extends Component {
                                                 projects.map((project, i) => {
                                                         return (
                                                                 <Carousel.Item key={i}>
-                                                                        <Project name={project.name} status={project.status} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} pictures={project.pictures} />
+                                                                        <Project name={project.name} status={project.status} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} pictures={project.pictures} projectPreviewClick={this.projectPreviewClick} />
                                                                 </Carousel.Item>
                                                         );
                                                 })
 
                                         }
                                 </Carousel>
-                        </div >)
+                        </div>
+                </Fragment>
+                )
         }
 }
 

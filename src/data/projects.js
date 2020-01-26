@@ -28,7 +28,7 @@ export const projects = [{
         {
             name: 'Tachyons'
         }
-    ]
+    ], pictures: []
 }, {
     name: 'Newsroom Control System',
     status: {
@@ -56,12 +56,12 @@ export const projects = [{
     ],
     pictures: [
         {
-            name: 'First preview',
-            src: ''
+            name: 'Rundown Preview',
+            src: 'pictures/nrcs_preview1.png'
         },
         {
-            name: 'Second preview',
-            src: ''
+            name: 'Story Editor Preview',
+            src: 'pictures/nrcs_preview2.png'
         }
     ]
 }, {
@@ -88,5 +88,5 @@ export const projects = [{
         {
             name: 'Redux'
         }
-    ]
+    ], pictures: []
 }];
