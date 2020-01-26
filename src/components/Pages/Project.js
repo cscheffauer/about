@@ -49,7 +49,7 @@ const Project = ({ name, status, demourl, repourl, technologies }) => {
 
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

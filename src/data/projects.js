@@ -48,10 +48,45 @@ export const projects = [{
             name: 'React.js'
         },
         {
-            name: 'Redux'
+            name: 'React.lazy'
         },
         {
-            name: 'Tachyons'
+            name: 'Redux'
+        }
+    ],
+    pictures: [
+        {
+            name: 'First preview',
+            src: ''
+        },
+        {
+            name: 'Second preview',
+            src: ''
+        }
+    ]
+}, {
+    name: 'Lego Set Discovery',
+    status: {
+        cssclass: 'inwork',
+        label: 'coming soon'
+    },
+    demourl: {
+        label: 'coming soon',
+        url: ''
+    },
+    repourl: {
+        label: 'coming soon',
+        url: ''
+    },
+    technologies: [
+        {
+            name: 'React.js'
+        },
+        {
+            name: 'React.lazy'
+        },
+        {
+            name: 'Redux'
         }
     ]
 }];

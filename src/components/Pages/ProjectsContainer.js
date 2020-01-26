@@ -48,7 +48,7 @@ class Projects extends Component {
                                                 projects.map((project, i) => {
                                                         return (
                                                                 <Carousel.Item key={i}>
-                                                                        <Project name={project.name} status={project.status} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} />
+                                                                        <Project name={project.name} status={project.status} demourl={project.demourl} repourl={project.repourl} technologies={project.technologies} pictures={project.pictures} />
                                                                 </Carousel.Item>
                                                         );
                                                 })
