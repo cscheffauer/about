@@ -36,3 +36,17 @@ $font-family-base: 'Chivo', serif;
   .tooltipSocial:hover .tooltiptextSocial {
     visibility: visible;
   }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .iconSocial {
+    float: left;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+  .tooltipSocial .tooltiptextSocial{
+    display: none;
+  }
+}
