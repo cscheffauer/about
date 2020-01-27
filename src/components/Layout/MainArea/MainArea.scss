@@ -9,8 +9,17 @@
     -moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
     box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.52);
 }
-  /*
-  @media all and (min-width: 800px) {
-    .mainArea    { flex: 3 0px; }
-    .mainArea    { order: 2; }
-  }*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mainArea {
+    position: relative;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    height: 640px;
+    background-color: #222;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+}

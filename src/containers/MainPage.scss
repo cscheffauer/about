@@ -42,3 +42,34 @@ body {
   flex: 100%;
   order: 4;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+body {
+  padding: 0;
+  margin: 0px;
+  overflow: hidden;
+}
+  .aside {
+    flex: 100%;
+    order: 1;
+    height: 50px;
+  }
+  
+  .mainArea {
+    //border: 1px solid red;
+    order: 2;
+    flex: auto;
+  }
+  .header {
+    //border: 1px solid green;
+    flex: 100%;
+    order: 3;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: white;
+  }
+}

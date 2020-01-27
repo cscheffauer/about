@@ -56,11 +56,11 @@ export const projects = [{
     ],
     pictures: [
         {
-            name: 'Rundown Preview',
+            name: 'Rundown Mockup',
             src: 'pictures/nrcs_preview1.png'
         },
         {
-            name: 'Story Editor Preview',
+            name: 'Story Editor Mockup',
             src: 'pictures/nrcs_preview2.png'
         }
     ]
