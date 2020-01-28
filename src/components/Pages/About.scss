@@ -90,3 +90,89 @@ $font-family-base: 'Chivo', serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.596);
     height: 10px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+    .aboutOuterBox {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 60px;
+        bottom: 90px;
+        background-color: #464646;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .aboutLocationWrapper{
+        order: 3;
+        flex: 100%;
+        font-family: $font-family-base;
+        color: #ffff;
+        font-size: 5vw;
+        display: block;
+        position: relative;
+        left: 15%;
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    .aboutLocationLink {
+        display: inline;
+        line-height: 80px;
+        vertical-align: middle;
+        color: #fff;
+        margin-left: 4vw;
+    }
+    .aboutLocationLink:hover {
+        font-size: 5vw;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 450px) {
+    .aboutLocationWrapper{
+        order: 3;
+        flex: 100%;
+        font-family: $font-family-base;
+        color: #ffff;
+        font-size: 5vw;
+        display: block;
+        position: relative;
+        left: 5%;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .aboutLocationLink {
+        display: inline;
+        line-height: 80px;
+        vertical-align: middle;
+        color: #fff;
+        margin-left: 5vw;
+    }
+
+    .aboutLocationLink:hover {
+        font-size: 5vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    .aboutNameWrapper{
+        order: 2;
+        flex: 100%;
+        text-align: center;
+        font-family: $font-family-base;
+        color: #ffff;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+}
