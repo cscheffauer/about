@@ -15,7 +15,14 @@ $spacing-large: $spacing * 3;
   padding: $spacing-large $spacing;
   max-width: 1000px;
   margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    padding: 1rem 1rem;
+    margin-top: 10px;
+  }
 }
+
+
+
 
 .textCrawlActor {
   color: $color-white;
@@ -28,6 +35,11 @@ $spacing-large: $spacing * 3;
 
   &:last-of-type {
     margin-bottom: $spacing-large;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.5rem;
   }
 }
 

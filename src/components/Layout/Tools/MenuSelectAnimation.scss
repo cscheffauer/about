@@ -1,7 +1,21 @@
-  .path {
+  .pathDesktop {
     stroke-dasharray: 1000;
     stroke-dashoffset: 0;
     animation: dash 2s linear alternate;
+    display: block;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .pathMobile {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: dash 2s linear alternate;
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
   }
   
   @keyframes dash {
@@ -13,4 +27,3 @@
     }
   }
 
-  
