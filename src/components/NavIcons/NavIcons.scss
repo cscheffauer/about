@@ -124,7 +124,7 @@ $font-family-base: 'Chivo', serif;
     margin-top: 5px;
     -webkit-mask-image: radial-gradient(circle at 50% 50%, black 62%, rgba(0, 0, 0, 0.7) 66%);
     mask-image: radial-gradient(circle at 50% 50%, black 62%, rgba(0, 0, 0, 0.7) 66%);
-}
+  }
 
 .tooltipNavIcons {
   position: relative;
@@ -145,4 +145,11 @@ $font-family-base: 'Chivo', serif;
 .positionAnimationHomeNav {
   display:none;
 }
+}
+
+/* small devices (tablets, 600px - 1500px) */
+@media only screen and (min-width: 601px) and (max-width: 1500px) {
+  .tooltipNavIcons .tooltiptext{
+    display:none;
+  }
 }
