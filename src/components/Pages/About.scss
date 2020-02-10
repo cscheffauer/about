@@ -91,6 +91,44 @@ $font-family-base: 'Chivo', serif;
     height: 10px;
 }
 
+/* small devices (tablets, 600px - 1500px) */
+@media only screen and (min-width: 601px) and (max-width: 1500px) {
+    .aboutLocationWrapper{
+        order: 3;
+        flex: 100% 1;
+        font-family: "Chivo", serif;
+        color: #ffff;
+        font-size: 2.2vw;
+        display: block;
+        position: relative;
+        left: 18vw;
+        width: fit-content;
+        margin-top: 15px;
+    }
+
+    .aboutLocationLink {
+        display: inline;
+        line-height: 80px;
+        vertical-align: middle;
+        color: #fff;
+        margin-left: 4vw;
+    }
+    .aboutLocationLink:hover {
+        font-size: 2.2vw;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+}
+
+/* small devices (tablets, 600px - 1500px) */
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+    .aboutLocationWrapper{
+        left: 12vw;
+    }
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
