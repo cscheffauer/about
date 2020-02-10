@@ -1,9 +1,14 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
+  "name": "about",
+  "version": "1.1.0",
   "private": false,
   "homepage": "https://cscheffauer.github.io/about/",
+  "description": "This is the Portfolio Page of Christoph Scheffauer.",
+  "main": "index.js",
+  "author": "Christoph Scheffauer",
+  "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
@@ -40,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "tachyons": "^4.11.1"
   }
 }
