@@ -5,7 +5,7 @@ $font-family-base: Courier, monospace;
     float: center;
     height: 75px;
     position: relative;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     margin-right: 3.5vh;
     margin-left: 3.5vh;
     filter: invert(0%);
@@ -75,7 +75,7 @@ $font-family-base: Courier, monospace;
 .navIcon {
     float: center;
     height: 75px;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     margin-left: 1vw;
     filter: invert(0%);
 }
@@ -113,9 +113,20 @@ $font-family-base: Courier, monospace;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -56%;
-  left: 2px;
+  top: -50%;
+  left: -12px;
+  @media only screen and (min-width: 1650px) {
+    left: -10px;
+  }
+  @media only screen and (min-width: 1750px) {
+    left: -8px;
+  }
+  @media only screen and (min-width: 1950px) {
+    left: -4px;
+  }
 }
+
+
 
 .tooltipNavIcons .tooltiptextDarkMode {
   background-color: #fff;

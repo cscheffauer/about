@@ -3,7 +3,7 @@ $font-family-base: Courier, monospace;
 .iconSocial {
     float: center;
     height: 75px;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     margin-right: 1vw;
     filter: invert(0%);
 }
@@ -33,7 +33,7 @@ $font-family-base: Courier, monospace;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: -56%;
+    top: -50%;
     left: -28px;
   }
   

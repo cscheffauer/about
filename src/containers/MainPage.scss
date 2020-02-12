@@ -58,7 +58,6 @@ body {
   left: 0px;
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .colorSwitcher {
@@ -68,7 +67,8 @@ body {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 30px;
+  height: 4vh;
+  line-height: 4vh;
   text-align: center;
 }
 
@@ -114,8 +114,10 @@ body {
     .mainArea {
       //border: 1px solid red;
       order: 3;
-      flex: none;
-      width: 75%;
+      flex: 100%;
+      width: 100%;
+      max-width: none;
+      min-height: 300px;
       margin: 30px 5vw;
       height: 75vh;
     }
