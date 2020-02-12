@@ -9,6 +9,7 @@ import './MainPage.scss';
 import SocialMediaIcon from '../components/SocialMediaIcons/SocialMediaIcon';
 import HomeNavIcon from '../components/NavIcons/HomeNavIcon';
 import NavIcon from '../components/NavIcons/NavIcon';
+import ColorSwitcher from '../components/Layout/Tools/ColorSwitcher'
 
 
 const AsyncPageProjects = lazy(() => import('../components/Pages/ProjectsContainer'));
@@ -21,11 +22,15 @@ class MainPage extends Component {
         this.state = {
             socialmedia: socialmedia,
             menuitems: menuitems,
-            route: 'home'
+            route: 'home',
+            colorMode: 'normal'
         };
     }
     onRouteChange = (route) => {
         this.setState({ route: route });
+    }
+    onColorModeChange = (colorMode) => {
+        this.setState({ colorMode: colorMode });
     }
     getRouteComponent = (route) => {
         if (route === 'home') {
@@ -55,8 +60,22 @@ class MainPage extends Component {
         let page;
         page = this.getRouteComponent(this.state.route);
         return (
-            <div className="MainPage" >
+            <div className={`MainPage ${this.state.colorMode === 'dark' ? "MainPageDark" : ""}`}  >
                 <header className="header">
+                    <div>Imprint should be placed here</div>
+                </header>
+                <MainArea>
+                    {page}
+                </MainArea>
+
+                <footer className="footer">
+                    {
+                        this.state.socialmedia.map((link, i) => {
+                            return (
+                                <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} />
+                            );
+                        })
+                    }
                     <HomeNavIcon onRouteChange={this.onRouteChange} route={this.state.route} />
                     {
                         this.state.menuitems.map((menuitem, i) => {
@@ -65,20 +84,8 @@ class MainPage extends Component {
                             );
                         })
                     }
-                </header>
-                <MainArea>
-                    {page}
-                </MainArea>
-                <div className="aside"> {/*SOCIAL MEDIA*/}
-                    {
-                        this.state.socialmedia.map((link, i) => {
-                            return (
-                                <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} />
-                            );
-                        })
-                    }
-                </div>
-
+                </footer>
+                <div className="colorSwitcher"><ColorSwitcher onColorModeChange={this.onColorModeChange} colorMode={this.state.colorMode}></ColorSwitcher></div>
 
             </div>
         );

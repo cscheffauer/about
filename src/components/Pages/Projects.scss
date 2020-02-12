@@ -26,13 +26,15 @@ $font-family-base: 'Chivo', serif;
 
 .projectBoxWrapper {
     margin-top: 20px;
-    height: 500px;
+    min-height: 530px;
+    height: 53vh;
 }
 
 .innerProjectBox {
     margin: 0 auto;
     width: 80%;
-    height: 500px;
+    min-height: 530px;
+    height: 53vh;
     background-color: #353535;
 }
 

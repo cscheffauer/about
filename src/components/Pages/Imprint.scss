@@ -73,3 +73,10 @@ $font-family-base: 'Chivo', serif;
         height: 58vh;
     }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) and (max-height:700px) {
+    .imprintTextbox{
+        height: 50vh;
+    }
+}

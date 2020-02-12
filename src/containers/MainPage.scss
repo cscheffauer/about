@@ -1,45 +1,74 @@
 body {
   padding: 0;
-  margin: 10px 10px 10px 10px;
   overflow: hidden;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  background-color: #DBDBDB;
 }
 
 .MainPage {
   display: flex;  
   flex-flow: row wrap;
+  height: 100vh;
+  width: 100vw;
+  background-color: #DBDBDB;
+  animation: changeToNormal 1s normal;
+}
+
+.MainPageDark {
+  background-color: #222;
+  animation: changeToDark 1s normal;
+}
+
+@keyframes changeToDark {
+  from {
+    background-color: #DBDBDB
+  }
+  to {
+    background-color: #222;
+  }
+}
+
+@keyframes changeToNormal {
+  from {
+    background-color: #222;   
+  }
+  to {
+    background-color: #DBDBDB;
+  }
 }
 
 
 .header {
-  //border: 1px solid green;
+  display: none;
   flex: 100%;
   order: 1;
 }
 
-.aside {
-  //border: 1px solid gold;
-  flex: 0;
-  order: 2;
-}
 
 .mainArea {
-  //border: 1px solid red;
   order: 3;
   flex: auto;
+  width: 100%;
 }
 
 .footer {
-  //border: 1px solid blue;
   flex: 100%;
   order: 4;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.colorSwitcher {
+  flex: 100%;
+  order: 5;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
 }
 
 /* Extra small devices (phones, 600px and down) */

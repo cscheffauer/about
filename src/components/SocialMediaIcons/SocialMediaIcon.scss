@@ -3,9 +3,10 @@
 $font-family-base: 'Chivo', serif;
 
 .iconSocial {
-    float: left;
+    float: center;
     height: 75px;
-    margin-top: 20px;
+    margin-bottom: 2vh;
+    margin-right: 1vw;
 }
 .iconSocial:hover {
   cursor: pointer; 
@@ -19,7 +20,7 @@ $font-family-base: 'Chivo', serif;
   .tooltipSocial .tooltiptextSocial {
     font-family: $font-family-base;
     visibility: hidden;
-    width: 130%;
+    width: 130px;
     background-color: #222222;
     color: #fff;
     text-align: center;
@@ -29,8 +30,8 @@ $font-family-base: 'Chivo', serif;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 46%;
-    left: 120%;
+    top: -56%;
+    left: -28px;
   }
   
   .tooltipSocial:hover .tooltiptextSocial {
@@ -47,6 +48,13 @@ $font-family-base: 'Chivo', serif;
     margin-left: 10px;
 }
   .tooltipSocial .tooltiptextSocial{
+    display: none;
+  }
+}
+
+/* small devices (tablets, 600px - 1500px) */
+@media only screen and (min-width: 601px) and (max-width: 1500px) {
+  .tooltipSocial .tooltiptextSocial {
     display: none;
   }
 }

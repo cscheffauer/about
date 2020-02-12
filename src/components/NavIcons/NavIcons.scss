@@ -4,9 +4,65 @@ $font-family-base: 'Chivo', serif;
 
 
 .homeIcon {
-    float: left;
+    float: center;
     height: 75px;
     position: relative;
+    margin-bottom: 2vh;
+    margin-right: 3.5vh;
+    margin-left: 3.5vh;
+}
+
+.homeIconSelected {
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 65%);
+  mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 65%);
+  animation: selectionAnimation 0.2s normal;
+}
+
+@keyframes selectionAnimation {
+  0% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 95%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 95%);
+  }
+  12% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 91%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 91%);
+  }
+  25% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 87%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 87%);
+  }
+  37% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 82%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 82%);
+  }
+  50% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 78%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.3) 78%);
+  }
+  62% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.35) 74%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.35) 74%);
+  }
+  75% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.4) 70%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.4) 70%);
+  }
+  87% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 67%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 67%);
+  }
+  92% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.5) 65%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.5) 65%);
+  }
+  96% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.55) 63%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.55) 63%);
+  }
+  100% {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.6) 62%);
+    mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.6) 62%);
+  }
 }
 
 .homeIcon:hover {
@@ -14,9 +70,16 @@ $font-family-base: 'Chivo', serif;
 }
 
 .navIcon {
-    float: left;
+    float: center;
     height: 75px;
-    margin-left: 25px;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+}
+
+.navIconSelected {
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 65%);
+  mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0.45) 65%);
+  animation: selectionAnimation 0.2s normal;
 }
 
 .navIcon:hover {
@@ -28,86 +91,86 @@ $font-family-base: 'Chivo', serif;
     display: inline-block;
   }
   
-  .tooltipNavIcons .tooltiptext {
-    font-family: "Chivo", serif;
-    visibility: hidden;
-    width: 90%;
-    background-color: #222222;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 120%;
-    left: 18%;
-  }
+.tooltipNavIcons .tooltiptext {
+  font-family: "Chivo", serif;
+  visibility: hidden;
+  width: 130px;
+  background-color: #222222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
   
-  .tooltipNavIcons:hover .tooltiptext {
-    visibility: visible;
-  }
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -56%;
+  left: 2px;
+}
 
-  .positionAnimationHomeNav {
+.tooltipNavIcons:hover .tooltiptext {
+  visibility: visible;
+}
+
+.positionAnimationHomeNav {
+  position: absolute;
+  transform: translate(-10px,-10px);
+  z-index: -10;
+}
+
+.positionAnimationNav {
+
+  &-projects {
     position: absolute;
-    transform: translate(-10px,-10px);
     z-index: -10;
-  }
-
-  .positionAnimationNav {
-
-    &-projects {
-      position: absolute;
-      z-index: -10;
-      top: 0px;
-      left: 57px;
-        @media only screen and (max-width: 600px) {
-          position: absolute;
-          z-index: -10;
-          bottom: -10px;
-          right: 25px;
-          height: 90px;
-          width: 180px;
-          top: unset;
-          left: unset;
-        }
-    }
-
-    &-about {
-      position: absolute;
-      z-index: -10;
-      top: 0px;
-      left: 157px;
+    top: 0px;
+    left: 57px;
       @media only screen and (max-width: 600px) {
         position: absolute;
         z-index: -10;
         bottom: -10px;
-        right: 100px;
+        right: 25px;
         height: 90px;
         width: 180px;
         top: unset;
         left: unset;
       }
-    }
+  }
 
-    &-imprint {
+  &-about {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    left: 157px;
+    @media only screen and (max-width: 600px) {
       position: absolute;
       z-index: -10;
-      top: 0px;
-      left: 257px;
-      @media only screen and (max-width: 600px) {
-        position: absolute;
-        z-index: -10;
-        bottom: -10px;
-        right: 175px;
-        height: 90px;
-        width: 180px;
-        top: unset;
-        left: unset;
-      }
+      bottom: -10px;
+      right: 100px;
+      height: 90px;
+      width: 180px;
+      top: unset;
+      left: unset;
     }
   }
+
+  &-imprint {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    left: 257px;
+    @media only screen and (max-width: 600px) {
+      position: absolute;
+      z-index: -10;
+      bottom: -10px;
+      right: 175px;
+      height: 90px;
+      width: 180px;
+      top: unset;
+      left: unset;
+    }
+  }
+}
 
 
   /* Extra small devices (phones, 600px and down) */

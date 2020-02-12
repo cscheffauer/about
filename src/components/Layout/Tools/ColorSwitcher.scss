@@ -1,0 +1,28 @@
+.normal {
+    height: 12px;
+    width: 50px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.dark {
+    height: 12px;
+    width: 50px;
+    background-color: #222;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.selectedColorModeNormal {
+    box-shadow: 1px 4px 7px #222;
+}
+
+.selectedColorModeDark{
+    box-shadow: 1px 4px 7px #DBDBDB;
+}
