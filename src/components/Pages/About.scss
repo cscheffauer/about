@@ -1,7 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Chivo:700&display=swap');
-
-$font-family-base: 'Chivo', serif;
+$font-family-base: Courier, monospace;
 
 .aboutOuterBox {
     position: absolute;
@@ -48,12 +45,13 @@ $font-family-base: 'Chivo', serif;
     line-height: 80px;
     vertical-align: middle;
     color: #fff;
+    font-weight: normal;
 }
 
 .aboutLocationLink:hover {
-    font-size: 27px;
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .aboutTextCrawl{
@@ -73,7 +71,6 @@ $font-family-base: 'Chivo', serif;
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 25px;
-    font-weight: 700;
 }
 
 .aboutTextAnswer{

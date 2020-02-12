@@ -34,7 +34,7 @@ class Imprint extends Component {
                         <br /><h3>Contacting us</h3>
                         <p><b>Owner & Developer of this website:</b> <br />Christoph Scheffauer</p>
                         <p>If you would like to contact us to understand more about this Disclaimer or wish to contact us concerning any matter relating to it, you may send an email to <a rel="nofollow" href="mailto:scheffauerc@gmail.com">scheffauerc@gmail.com</a></p>
-                        <p>This document was last updated on February 10, 2020</p>
+                        <p>This document was last updated on February 12, 2020</p>
                     </Scroll>
                 </div>
             </div>

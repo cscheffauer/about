@@ -1,6 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
-
-$font-family-base: 'Chivo', serif;
+$font-family-base: Courier, monospace;
 
 .projectOuterBox {
     position: absolute;
@@ -200,6 +198,7 @@ $font-family-base: 'Chivo', serif;
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    font-family: $font-family-base;
   }
   
   /* Add Animation */

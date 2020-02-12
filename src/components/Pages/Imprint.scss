@@ -1,7 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Chivo:700&display=swap');
-
-$font-family-base: 'Chivo', serif;
+$font-family-base: Courier, monospace;
 
 .imprintOuterBox {
     position: absolute;
@@ -27,7 +24,7 @@ $font-family-base: 'Chivo', serif;
 .imprintTextbox{
     order: 2;
     flex: 100% 1;
-    font-family: "Chivo", serif;
+    font-family: $font-family-base;
     color: #ffff;
     font-size: 20px;
     position: absolute;
@@ -63,7 +60,7 @@ $font-family-base: 'Chivo', serif;
     .imprintTextbox{
         order: 2;
         flex: 100% 1;
-        font-family: "Chivo", serif;
+        font-family: $font-family-base;
         color: #ffff;
         font-size: 6vw;
         position: absolute;

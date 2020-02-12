@@ -3,35 +3,36 @@ body {
   overflow: hidden;
 }
 
+
 .MainPage {
   display: flex;  
   flex-flow: row wrap;
   height: 100vh;
   width: 100vw;
-  background-color: #DBDBDB;
+  background-color: #fff;
   animation: changeToNormal 1s normal;
 }
 
 .MainPageDark {
-  background-color: #222;
+  background-color: #121212;
   animation: changeToDark 1s normal;
 }
 
 @keyframes changeToDark {
   from {
-    background-color: #DBDBDB
+    background-color: #fff;
   }
   to {
-    background-color: #222;
+    background-color: #121212;
   }
 }
 
 @keyframes changeToNormal {
   from {
-    background-color: #222;   
+    background-color: #121212;   
   }
   to {
-    background-color: #DBDBDB;
+    background-color: #fff;
   }
 }
 

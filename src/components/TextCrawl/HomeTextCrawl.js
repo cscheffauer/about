@@ -24,9 +24,10 @@ class TextCrawl extends Component {
             .addScene(theater.replay.bind(theater))
     }
     render() {
+        const { colorMode } = this.props;
         return (
             <main className="textCrawlScene">
-                <div className="textCrawlActor">
+                <div className={`textCrawlActor ${colorMode === 'dark' ? "textCrawlActorDarkMode" : ""}`}>
                     <div id="Christoph" className="actor__content"></div>
                 </div>
             </main>

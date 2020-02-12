@@ -2,6 +2,8 @@ import React, { Fragment } from 'react'
 
 import './ColorSwitcher.scss';
 
+
+
 const ColorSwitcher = ({ onColorModeChange, colorMode }) => {
     return (
         <Fragment>

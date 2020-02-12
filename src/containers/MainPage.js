@@ -29,12 +29,13 @@ class MainPage extends Component {
     onRouteChange = (route) => {
         this.setState({ route: route });
     }
+
     onColorModeChange = (colorMode) => {
         this.setState({ colorMode: colorMode });
     }
     getRouteComponent = (route) => {
         if (route === 'home') {
-            return <TextCrawl />
+            return <TextCrawl colorMode={this.state.colorMode} />
         } else if (route === 'projects') {
             return (
                 <Suspense fallback={< div > Loading...</div >}>
@@ -60,11 +61,11 @@ class MainPage extends Component {
         let page;
         page = this.getRouteComponent(this.state.route);
         return (
-            <div className={`MainPage ${this.state.colorMode === 'dark' ? "MainPageDark" : ""}`}  >
+            <div id="MainPage" className={`MainPage ${this.state.colorMode === 'dark' ? "MainPageDark" : ""}`}  >
                 <header className="header">
                     <div>Imprint should be placed here</div>
                 </header>
-                <MainArea>
+                <MainArea route={this.state.route} colorMode={this.state.colorMode}>
                     {page}
                 </MainArea>
 
@@ -72,15 +73,15 @@ class MainPage extends Component {
                     {
                         this.state.socialmedia.map((link, i) => {
                             return (
-                                <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} />
+                                <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} colorMode={this.state.colorMode} />
                             );
                         })
                     }
-                    <HomeNavIcon onRouteChange={this.onRouteChange} route={this.state.route} />
+                    <HomeNavIcon onRouteChange={this.onRouteChange} route={this.state.route} colorMode={this.state.colorMode} />
                     {
                         this.state.menuitems.map((menuitem, i) => {
                             return (
-                                <NavIcon onRouteChange={this.onRouteChange} key={i} type={menuitem.type} url={menuitem.url} tooltiptext={menuitem.tooltiptext} route={this.state.route} />
+                                <NavIcon onRouteChange={this.onRouteChange} key={i} type={menuitem.type} url={menuitem.url} tooltiptext={menuitem.tooltiptext} route={this.state.route} colorMode={this.state.colorMode} />
                             );
                         })
                     }

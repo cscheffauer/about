@@ -1,15 +1,18 @@
-@import url('//fonts.googleapis.com/css?family=Chivo&display=swap');
-
-$font-family-base: 'Chivo', serif;
+$font-family-base: Courier, monospace;
 
 .iconSocial {
     float: center;
     height: 75px;
     margin-bottom: 2vh;
     margin-right: 1vw;
+    filter: invert(0%);
 }
 .iconSocial:hover {
   cursor: pointer; 
+}
+
+.iconSocialDarkMode {
+  filter: invert(100%);
 }
 
 .tooltipSocial {
@@ -36,6 +39,11 @@ $font-family-base: 'Chivo', serif;
   
   .tooltipSocial:hover .tooltiptextSocial {
     visibility: visible;
+  }
+
+  .tooltipSocial .tooltiptextSocialDarkMode {
+    background-color: #fff;
+    color: #222222;
   }
 
 
