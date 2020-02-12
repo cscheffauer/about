@@ -35,7 +35,7 @@ $font-family-base: Courier, monospace;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 661px) {
     .imprintOuterBox {
         position: fixed;
         width: 100%;
@@ -62,7 +62,7 @@ $font-family-base: Courier, monospace;
         flex: 100% 1;
         font-family: $font-family-base;
         color: #ffff;
-        font-size: 6vw;
+        font-size: 5vw;
         position: absolute;
         top: 80px;
         left: 2%;
@@ -74,6 +74,6 @@ $font-family-base: Courier, monospace;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 400px) and (max-height:700px) {
     .imprintTextbox{
-        height: 50vh;
+        height: 55vh;
     }
 }

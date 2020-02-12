@@ -58,6 +58,9 @@ body {
   left: 0px;
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 661px) {
+    bottom: 10px;
+  }
 }
 
 .colorSwitcher {
@@ -70,10 +73,30 @@ body {
   height: 4vh;
   line-height: 4vh;
   text-align: center;
+
+  @media only screen and (max-width: 661px) {
+    height: 60px;
+    line-height: 60px;
+    width: 100px;
+    right: 0px;
+    left: unset;
+    bottom: 10px;
+  }
+}
+
+.socialMediaWrapper {
+  display: inline-block;
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 661px) {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 661px) {
   html,
 body {
   padding: 0;
@@ -105,7 +128,7 @@ body {
 }
 
 /* small devices (tablets, 600px - 1500px) */
-@media only screen and (min-width: 601px) and (max-width: 1500px) {
+@media only screen and (min-width: 662px) and (max-width: 1500px) {
     .aside {
       flex: 0;
       order: 2;

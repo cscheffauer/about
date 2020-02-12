@@ -245,7 +245,7 @@ $font-family-base: Courier, monospace;
   }
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 661px) {
   .projectOuterBox {
       position: fixed;
       width: 100%;
@@ -258,11 +258,14 @@ $font-family-base: Courier, monospace;
   .projectBoxWrapper {
       margin-top: 0px;
       height: 100%;
+
+      min-height: unset;
   }
   .innerProjectBox {
       margin: 0 auto;
       width: 90%;
       height: 72vh;
+      min-height: unset;
       background-color: #353535;
   }
   .projectHeadline{
@@ -336,7 +339,7 @@ $font-family-base: Courier, monospace;
 
 }
 
-@media only screen and (max-width: 600px) and (min-height: 700px) {
+@media only screen and (max-width: 661px) and (min-height: 700px) {
   .innerProjectBox {
     height: 77vh;
 }
@@ -344,7 +347,7 @@ $font-family-base: Courier, monospace;
 
 
 /* small devices (tablets, 600px - 1500px) */
-@media only screen and (min-width: 601px) and (max-width: 1500px) {
+@media only screen and (min-width: 662px) and (max-width: 1500px) {
     .projectBoxWrapper {
       margin-top: 0px;
       height: 100%;

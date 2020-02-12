@@ -48,20 +48,34 @@ $font-family-base: Courier, monospace;
 
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 661px) {
+  .tooltipSocial{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    @media (orientation: landscape) {
+      margin-right: 8px;
+    }
+  }
   .iconSocial {
-    float: left;
-    height: 40px;
-    margin-top: 5px;
-    margin-left: 10px;
+    height: 37px;
+    margin-top: 10px;
+
+    @media (orientation: landscape) {
+      height: 30px;
+      margin-top: 8px;
+      margin-right: 0px;
+    }
 }
   .tooltipSocial .tooltiptextSocial{
     display: none;
   }
 }
 
+
+
 /* small devices (tablets, 600px - 1500px) */
-@media only screen and (min-width: 601px) and (max-width: 1500px) {
+@media only screen and (min-width: 662px) and (max-width: 1500px) {
   .tooltipSocial .tooltiptextSocial {
     display: none;
   }

@@ -70,13 +70,15 @@ class MainPage extends Component {
                 </MainArea>
 
                 <footer className="footer">
-                    {
-                        this.state.socialmedia.map((link, i) => {
-                            return (
-                                <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} colorMode={this.state.colorMode} />
-                            );
-                        })
-                    }
+                    <div className="socialMediaWrapper">
+                        {
+                            this.state.socialmedia.map((link, i) => {
+                                return (
+                                    <SocialMediaIcon key={i} type={link.platform} url={link.url} tooltiptext={link.tooltiptext} colorMode={this.state.colorMode} />
+                                );
+                            })
+                        }
+                    </div>
                     <HomeNavIcon onRouteChange={this.onRouteChange} route={this.state.route} colorMode={this.state.colorMode} />
                     {
                         this.state.menuitems.map((menuitem, i) => {

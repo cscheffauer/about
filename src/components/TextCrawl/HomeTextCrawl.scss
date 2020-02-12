@@ -13,12 +13,12 @@ $spacing-large: $spacing * 3;
   padding: $spacing-large $spacing;
   max-width: 1000px;
   margin: 0 auto;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 661px) {
     padding: 1rem 1rem;
-    margin-top: 10px;
+    margin-top: 10vh;
   }
   /* small devices (tablets, 600px - 1500px) */
-  @media only screen and (min-width: 601px) and (max-width: 1500px) {
+  @media only screen and (min-width: 662px) and (max-width: 1500px) {
     padding: 20vh 4rem;
     margin-top: 0 auto;
   }
@@ -41,8 +41,9 @@ $spacing-large: $spacing * 3;
   }
 
 
-  @media only screen and (max-width: 600px) {
-    font-size: 2.5rem;
+  @media only screen and (max-width: 661px) {
+    font-size: 2.3rem;
+    line-height: 1.2;
   }
 }
 
