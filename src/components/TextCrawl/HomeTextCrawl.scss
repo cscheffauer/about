@@ -15,8 +15,12 @@ $spacing-large: $spacing * 3;
   margin: 0 auto;
   @media only screen and (max-width: 661px) {
     padding: 1rem 1rem;
+    margin-top: 20vh;
+  }
+  @media only screen and (max-width: 661px) and (min-height: 600px){
     margin-top: 10vh;
   }
+
   /* small devices (tablets, 600px - 1500px) */
   @media only screen and (min-width: 662px) and (max-width: 1500px) {
     padding: 20vh 4rem;
