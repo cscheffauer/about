@@ -53,7 +53,7 @@ class Projects extends Component {
                         {this.state.displayPictureModal &&
                                 <div className="projectPictureModal">
                                         <span className="projectPictureClose" onClick={() => this.projectPictureOnClose()}>&times;</span>
-                                        <img src={this.state.displayPicturesSRC} alt={this.state.displayPicturesCaption} className="projectPicture" />
+                                        <img draggable="false" src={this.state.displayPicturesSRC} alt={this.state.displayPicturesCaption} className="projectPicture" />
                                         <div className="projectPictureCaption">{this.state.displayPicturesCaption}</div>
                                 </div>
                         }

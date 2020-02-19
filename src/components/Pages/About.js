@@ -19,7 +19,7 @@ class About extends Component {
             <div className="aboutOuterBox" >
                 <Scroll>
                     <div className="aboutIconWrapper">
-                        <img alt="About Icon" src={`./icons/me.png`} />
+                        <img draggable="false" alt="About Icon" src={`./icons/me.png`} />
                     </div>
                     <div className="aboutNameWrapper">
                         {about.name}

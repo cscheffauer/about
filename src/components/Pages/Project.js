@@ -18,11 +18,11 @@ const Project = ({ name, status, demourl, repourl, technologies, pictures, proje
                         status.label === "online" &&
                         <div className="projectURLs">
                             <div className="projectDemoURLs">
-                                <img className="iconURL" alt="Project Demo Icon" src={`./icons/demo.png`} />
+                                <img draggable="false" className="iconURL" alt="Project Demo Icon" src={`./icons/demo.png`} />
                                 <p onClick={() => window.open(demourl.url, "_blank")}>{demourl.label}</p>
                             </div>
                             <div className="projectRepoURLs">
-                                <img className="iconURL" alt="Project Repo Icon" src={`./icons/repo.png`} />
+                                <img draggable="false" className="iconURL" alt="Project Repo Icon" src={`./icons/repo.png`} />
                                 <p onClick={() => window.open(repourl.url, "_blank")}>{repourl.label}</p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Project = ({ name, status, demourl, repourl, technologies, pictures, proje
                                     return (
                                         <div style={{ display: "block", marginBottom: "20px", textAlign: "center" }} key={i} >
                                             <p>{picture.name}</p>
-                                            <img alt={picture.name} src={picture.src} className="projectPreviewPicture" onClick={() => projectPreviewClick(picture.src, picture.name)} />
+                                            <img draggable="false" alt={picture.name} src={picture.src} className="projectPreviewPicture" onClick={() => projectPreviewClick(picture.src, picture.name)} />
                                         </div>
                                     );
 
