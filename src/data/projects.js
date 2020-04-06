@@ -26,7 +26,7 @@ export const projects = [{
             name: 'Redux-Thunk'
         },
         {
-            name: 'Material-UI'
+            name: 'MaterialUI'
         }
     ], pictures: []
 }, {
