@@ -30,18 +30,18 @@ export const projects = [{
         }
     ], pictures: []
 }, {
-    name: 'Star Wars Figures',
+    name: 'Pokedex',
     status: {
         cssclass: 'online',
-        label: 'online'
+        label: 'online (only Desktop)'
     },
     demourl: {
         label: 'Live Demo',
-        url: 'https://cscheffauer.github.io/starwars/'
+        url: 'https://cscheffauer.github.io/pokedex/'
     },
     repourl: {
         label: 'Repository',
-        url: 'https://github.com/cscheffauer/starwars'
+        url: 'https://github.com/cscheffauer/pokedex'
     },
     technologies: [
         {
@@ -57,7 +57,10 @@ export const projects = [{
             name: 'Redux-Thunk'
         },
         {
-            name: 'Tachyons'
+            name: 'react-relay (by Facebook)'
+        },
+        {
+            name: 'GraphQL'
         }
     ], pictures: []
 }, {

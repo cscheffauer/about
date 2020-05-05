@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import './Projects.scss';
 
@@ -15,7 +15,7 @@ const Project = ({ name, status, demourl, repourl, technologies, pictures, proje
                         {status.label}
                     </div>
                     {
-                        status.label === "online" &&
+                        status.cssclass === "online" &&
                         <div className="projectURLs">
                             <div className="projectDemoURLs">
                                 <img draggable="false" className="iconURL" alt="Project Demo Icon" src={`./icons/demo.png`} />
