@@ -18,3 +18,8 @@ export const headlines = [{
     text: 'Articles'
   }];
   
+  export const socialMedia = {
+    linkedin: 'https://www.linkedin.com/in/christoph-scheffauer/',
+    instagram: 'https://www.instagram.com/christoph.codes/',
+    github: 'https://github.com/cscheffauer'
+  };

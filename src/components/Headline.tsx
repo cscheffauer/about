@@ -32,4 +32,23 @@ const StyledDiv = styled.div`
     margin-top: 175px;
     display: flex;
     flex-direction: column;
+    transition: margin-top 4s;
+    
+    @keyframes slideInFromTop {
+    0% {
+        margin-top: 150px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.4;
+    }
+    100% {
+        margin-top: 175px;
+        opacity: 1;
+    }}
+    animation: 1s ease-in 0s 1 slideInFromTop;
+
 `;

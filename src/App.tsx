@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from './images/background.jpg'
 import { createGlobalStyle } from 'styled-components'
-import Headline from './components/Headline';
 import Menu from './components/Menu';
 import MainWrapper from './components/MainWrapper';
-import { headlines, menuItems } from './data/general';
+import { menuItems, socialMedia } from './data/general';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
 import Content from './components/Content';
+import SocialMedia from './components/SocialMedia';
+import { getBackgroundImage } from './background-utils';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,12 +22,17 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
+  const background = getBackgroundImage();
   return <Router>
     <GlobalStyle/>
     <StyledBackground $background={background}>
       <MainWrapper>
         <Menu menuItems={menuItems}/>
         <Content/>
+        <SocialMedia 
+          linkedinURL={socialMedia.linkedin} 
+          instagramURL={socialMedia.instagram} 
+          githubURL={socialMedia.github}/>
       </MainWrapper>
     </StyledBackground>
   </Router>;

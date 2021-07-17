@@ -11,6 +11,7 @@ const MainWrapper = (props: MainWrapperProps) => {
 };
 
 export default MainWrapper;
+
 const StyledDiv = styled.div`
     position: fixed;
     height: 100%;
