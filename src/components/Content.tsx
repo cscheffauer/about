@@ -7,6 +7,7 @@ import {
 import Headline from './Headline';
 import ContentWrapper from './ContentWrapper';
 import { headlines } from '../data/general';
+import Skills from './Skills';
 
 export interface ContentProps {}
 
@@ -15,7 +16,7 @@ return <StyledDiv>
     <Switch>
         <Route path="/skills">
             <ContentWrapper>
-            <p>skills</p>
+            <Skills/>
             </ContentWrapper>
         </Route>
         <Route path="/projects">
