@@ -24,11 +24,12 @@ const SocialMedia = (props: SocialMediaProps) => {
 export default SocialMedia;
 
 const StyledDiv = styled.div`
+    justify-self: end;
     display: flex;
-    position: absolute;
     height: 40px;
     width: 100%;
-    bottom: 50px;
+    margin-top: auto;
+    margin-bottom: 50px;
     > a + a {
         margin-left: 18px;
     }

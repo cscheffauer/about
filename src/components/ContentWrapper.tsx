@@ -15,12 +15,13 @@ const ContentWrapper = (props: ContentWrapperProps) => {
 
 export default ContentWrapper;
 const StyledDiv = styled.div`
-    height: 450px;
+    height: 100%;
     display: flex;
+    margin-top: 7vh;
 `;
 
 const StyledStroke = styled.div`
-    height: 100%;
+    height: 45vh;
     width: 3px;
     background-color: #FF7A00;
 `
